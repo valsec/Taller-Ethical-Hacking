@@ -35,3 +35,17 @@ python3 -m pip install -r requirements.txt
 python3 scan.py 192.168.1.5
 
 python3 scan.py name_device
+
+
+4.- Exploit_-_Web
+
+Archivo .ino con el codigo para el Attiny85 Digispark
+Deshabilita antivirus de Windows por Powershell
+Descarga y ejecuta exploit.exe con Powershell
+
+
+5.- Fuerza_Bruta_0000_a_9999
+
+Archivo .ino con el codigo para el Attiny85 Digispark
+
+Fuerza bruta para codigos de 4 digitos partiendo del 0000 al 9999
